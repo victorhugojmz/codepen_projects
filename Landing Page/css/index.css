@@ -1,4 +1,42 @@
-body { 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
     margin: 0px;
     padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color:#555;
 }
+h1 {
+    margin: 0em 0em 1em 0em;
+    font-size: 2.8em;
+    font-weight: 700;
+} 
+h2 { 
+     margin: 0em 0em .5em 0em;
+     font-size: 1.6em;
+     font-weight: 700;
+     line-height: 1.1em;
+}
+h3 {
+    margin: 0em 0em .5em 0em;
+    font-size: 1.3em;
+    font-weight: 700;
+} 
+h4 { 
+     margin: 0em 0em 1.5em 0em;
+     font-size: 1em;
+     font-weight: 700;
+}
+p {
+    margin: 0 0 1em 0;
+}
+a {
+    color: #007eff;
+}
+a:visited {
+    color: #65b1ff;
+}
+header {
+    
+ }
