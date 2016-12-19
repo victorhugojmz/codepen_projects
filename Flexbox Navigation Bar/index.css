@@ -1,0 +1,122 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding:0;
+}
+body,button {
+    font-family: "Helvetica",Arial,sans-serif;
+ }
+ul {
+      list-style-type: none;
+}
+.container {
+    margin: 0 auto;
+    padding:0;
+    max-width: 100vw;
+}
+input , button {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+}
+/*---------------------- Navbar Styles ----------------------*/
+/* Mixed navbar styles to get together all nav elements*/
+.mixed-navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* Main navigation for all nav elements */
+.main-navigation ul{ 
+    padding: 0;
+    margin: 0;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-navigation ul li a{ 
+    color:darkgray;
+    display: block;
+    text-decoration: none;
+    padding: 1em;
+}   
+.main-navigation ul li{ 
+    flex: 1 0 auto;
+    text-align: center;
+}  
+.main-navigation ul li a:hover {  
+    border-bottom: 5px solid rgb(4.1%, 42.7%, 47.6%);
+    color:dimgray;
+    transition: border-bottom .2s;
+}    
+.icon {
+    flex: 0 0 .7em;
+    font-size: 1.5em;
+    margin: 0px;
+}
+.brand{
+    display: block;
+    color: deepskyblue;
+    padding: 1.8em;
+    font-size: .8em;
+    cursor: pointer;
+}
+.actions-nav{
+    display: block;
+    flex: 0 0 auto;
+    padding-top: 1.4em;
+    padding-bottom: 1.4em;
+}
+.tweet{
+    display: flex;
+    padding: .7em;
+    background-color: rgb(4.1%, 42.7%, 47.6%);
+    color: white;
+    font-size: .9em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 1em;
+}
+.actions-nav li {
+    margin-right: .5em;
+    margin-left: .5em;
+}
+.actions-nav li:nth-last-child(1){
+    margin-right: 0px;
+}
+.actions-nav .profile-pic img{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;   
+    border-radius: 5px;
+}
+.actions-nav .search form input{
+    display: block;
+    border-radius: 20px;
+    outline: 0;
+    background: aliceblue;
+    width: 200px;
+    height: 20px;
+    padding: 6px;
+    font-size: .7em;
+    border: 1px solid lightgray;
+}
+.actions-nav .search input:focus{
+    outline: 0;
+    background: white;
+    transition: .2s background;
+    outline: none;
+}
+.fa-pencil-square-o {
+    margin-right: .5em;
+}
+.nav-item { 
+        display: block;
+    }
+@media screen and (max-width: 30em){
+    .nav-item,.brand,.search, .tweet { 
+        display: none;
+    }
+}
