@@ -7,6 +7,11 @@ body {
     font-weight: 300;
     color:#555;
 }
+#page {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
 h1 {
     margin: 0em 0em 1em 0em;
     font-size: 2.8em;
@@ -37,6 +42,71 @@ a {
 a:visited {
     color: #65b1ff;
 }
+a.btn {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid white;
+    padding: 4px 15px;
+    transition: background-color .5s;
+}
+a.btn:hover {
+    background-color: rgba(0,0,0,.3);
+}
 header {
-    
+    height: 430px;
+    background: #cf0004 url(../images/banner_1200.jpg) no-repeat center bottom;
+    position: relative;
+}
+header a.logo{
+    position: absolute;
+    display: block;
+    width: 160px; height: 66px;
+    background: url(../images/logo.svg) no-repeat 0 0;
+    background-size: contain;
+    top: 15px; left: 20px;
+}
+header a.logo span  {
+    display: none;
+}
+header div.hero {
+    position: absolute;
+    width: 42%;
+    top: 130px;
+    left: 55%;
+}
+header div.hero h1{
+   line-height: 1em;
+   margin: 0 0 30px 0;
+   color: white;
+}
+/*Section All*/
+section {
+    padding: 0px 30px;
+
+}
+/*Section Main*/
+section.main {
+    margin-top:20px;
+    margin-bottom: 30px;
+    padding: 0px;
+ }
+ section.main aside { 
+     width:33%;
+     float: left;
+     text-align: center;
+ }
+ section.main .content {
+     margin: 15px;
+     background: no-repeat center top;
+     background-size: 75px 75px;
+     padding-top: 85px;
+  }
+section.main aside h3 a {
+    color:#000;
+    text-decoration: none;
+
+}  
+section.main aside h3 a:hover {
+    text-decoration: underline;
  }
