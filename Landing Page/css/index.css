@@ -59,6 +59,7 @@ header {
     position: relative;
 }
 header a.logo{
+    z-index: 1;
     position: absolute;
     display: block;
     width: 160px; height: 66px;
@@ -199,8 +200,87 @@ section.how-to blockquote p.quote::after{
     font-family: serif;
 }
 section.how-to blockquote p.credit::before {
-    content:'\2014';
-    position: relative;
-    top: -1px; left: 0;
-    margin-right: .3em;
+				content:'\2014';
+				position: absolute;
+				left: 0px; top: -1px;
 }
+/*footer*/
+footer {
+    font-size: .8em;
+    margin: 40px;
+    color: #999;
+}
+footer .content{
+    display: inline;
+} 
+footer a{
+    margin-left: 30px;
+    color: #ccc;
+}
+footer a:visited{
+    color: #ccc;
+}
+footer a:hover {
+    color: black;
+}
+/* Navigation */
+nav {
+    background-color: rgba(0,0,0,0.65);
+    position: absolute;
+    top:0px; left: 0px;
+    padding: 50px 0 0 0;
+    width: 100%;
+}
+nav::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+nav ul { 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a { 
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 125px;
+    position: relative;
+}
+nav ul li:hover {
+    background-color: #2b0306;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+nav ul li a:visited {
+    color :white;    
+}
+nav ul li a:hover {
+    background-color: #6d0911;
+}
+/*Top level*/
+nav > ul {
+    padding-left: 200px;
+}
+nav > ul > li {
+    float: left;
+} 
+nav ul ul {
+    position: absolute;
+    top:100%;
+    background-color: #2b0306;
+}
+nav ul ul li {
+    position: relative;
+}
+nav ul ul ul {
+    left: 100%;
+    top:0px;
+}
+nav > ul > li > a {
+    width: auto;
+    padding: 10px 20px 15px 20px;
+}  
