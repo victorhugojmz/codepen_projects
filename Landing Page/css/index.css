@@ -272,6 +272,7 @@ nav > ul > li > a[aria-haspopup="true"]::after {
     right: 5px; bottom: 1.2em;
 }
 /*Media Queries*/
+
 @media screen and (max-width:1000px){
     h1 {
         font-size: 1.9em;
@@ -383,5 +384,47 @@ nav > ul > li > a[aria-haspopup="true"]::after {
     header div.hero h1{
         margin-bottom: 10px;
     }
- 
+    section.main aside {
+        width: 100%;
+        float: none;
+        text-align: left;
+    }
+    section.main aside  div.content { 
+          margin: 8px 20px 8px 0px;
+          padding: 5px 0px 10px 85px;
+          background-size: 50px 50px;
+          background-position: 20px 30px;  
+      }
+      section.atmosphere article {
+          padding: 160px 20px 0px 0px;
+          background-size: 300px auto;
+          min-height: initial;
+      }
+      section.how-to aside{
+          width: 100%;
+          float:none;
+          margin:0;
+          position: relative;
+      }
+      section.how-to aside div.content {
+          padding: 20px 20px 20px 150px;
+      }
+      section.how-to aside div.content p {
+          font-size: .9em;
+      }
+      section.how-to aside div.content img {
+          float:  left;
+          width: 125px;          
+          position: absolute;
+          top: 30px; left: 0px;
+      }
+      section.how-to blockquote {
+          margin: 0px 20px 0px 40px;
+          width: 90%;
+          padding: 1px 0px 20px 0px;
+          position: relative;
+      } 
+      section.how-to blockquote p.credit{
+          margin-bottom: 0;
+      }
 }
